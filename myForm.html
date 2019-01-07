@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="myForm.js"></script>
+</head>
+<body>
+
+<div id="container">
+
+
+
+<div id="ctl00_ContentPlaceHolder1_mainContent" style="margin-left: 10px;">
+<table class="tab">
+<tbody><tr>
+<td>
+<label id="lblRType">
+Reports</label><br>
+<select onchange="getReportType(this);" class="dropdownlist" style="width: 250px; font-size: 10px;">
+
+<option value="0">0 - Comparative Reports</option>
+<option value="1">1 - School Related Reports</option>
+<option value="2">2 - Enrolment Related Reports</option>
+</select>
+<br>
+
+</td>
+<td>
+<label id="lblYear">
+Year</label>
+<br>
+<select id="ddlYear" class="smallDropdown" style="font-size: 10px;"><option value="2016-17">2016-17</option><option value="2015-16">2015-16</option><option value="2014-15">2014-15</option><option value="2013-14">2013-14</option><option value="2012-13">2012-13</option></select>               
+
+</td><td>
+<label id="lblLevel">
+Level</label><br>
+<select id="ddlLevel" class="smallDropdown" title="Select Level" style="font-size: 10px;">
+<option value="10">National</option>
+<option value="0">State</option>
+<option value="1">District</option>
+<option value="2">Block</option>
+</select>
+</td>
+
+</tr>
+<tr>
+<td rowspan="3">
+<label id="lblRName">
+Report Name</label>
+<br>
+<select id="lstReport" onchange="getReportList(this);"  class="list" name="lstReport" size="15" style="font-size: 10px;">
+<option value="1">Comparative Report Name 1</option>
+<option value="2">Comparative Report Name 2</option>
+<option value="3">Comparative Report Name 3</option>
+</select>
+<br>
+</td>
+
+
+
+<td id="ageGroup">
+<label id="Label3">
+Age Group</label><br>
+<select id="ddlAgeGroup" class="smallDropdown" title="Select Level" style="font-size: 10px;" disabled="disabled">
+<option value="">All Age</option>
+<option value="06-10">06-10</option>
+<option value="11-13">11-13</option>
+<option value="14-15">14-15</option>
+<option value="16-17">16-17</option>                                             
+</select>
+</td>
+
+<td>
+<label id="lblRU">
+Location</label><br>
+<select id="ddlRural" class="smallDropdown" style="font-size: 10px;">
+<option value="0">0 - All Areas</option>
+<option value="1">1 - Rural Area</option>
+<option value="2">2 - Urban Area</option>
+</select>
+</td>       
+
+</tr>
+<tr>
+
+
+<td>
+<label>Report Type</label><br>
+<select id="ddlReportType" style="font-size: 10px;" class="smallDropdown">
+
+<option value="1">1 - Absolute</option>
+<option value="2">2 - Percentage</option>
+
+</select>
+</td>
+<td>
+<label> Gender</label><br>
+<select id="ddlGender" style="font-size: 10px;" class="smallDropdown" disabled="disabled">
+<option value="">Please Select..</option>
+<option value="1">1 - Male</option>
+<option value="2">2 - Female</option>
+<option value="3">3 - Total</option>
+
+</select>
+</td>
+<td>
+<label> Caste</label><br>
+<select id="ddlCaste" style="font-size: 10px;" class="smallDropdown" disabled="disabled">
+<option value="0">Select</option>
+<option value="0">ALL</option>
+<option value="1">1 - General</option>
+<option value="2">2 - SC</option>
+<option value="3">3 - ST</option>
+<option value="4">4 - OBC</option>
+<option value="5">5 - Muslim</option>
+
+</select>
+</td>
+
+</tr>
+<tr>
+
+
+</tr>
+
+</tbody></table>
+</div>
+</div>
+
+</body>
+</html>
